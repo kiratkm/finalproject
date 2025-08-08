@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Photo Gallery</title>
+
+  <!-- Internal CSS styling -->
+  <style>
+    /* Basic page styling */
+    body {
+      font-family: 'Arial Rounded MT Bold', sans-serif;
+      background-color: #fffaf0;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Header styling with gradient background */
+    header {
+      background: linear-gradient(to right, #ffa07a, #ffb6c1, #add8e6, #40e0d0);
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    /* Navigation menu layout */
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    /* Link styles */
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    /* Link hover effect */
+    nav a:hover {
+      color: #ff6347;
+    }
+
+    /* Gallery layout using flexbox */
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    /* Image styling with border, shadow, and hover zoom effect */
+    .gallery img {
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
+      border: 4px solid #ffa07a;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    /* Zoom and shadow effect on image hover */
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Caption under gallery */
+    .gallery p {
+      width: 100%;
+      text-align: center;
+      font-size: 1.2em;
+      margin-top: 30px;
+    }
+
+    /* Footer styling */
+    footer {
+      background-color: #fafafa;
+      text-align: center;
+      padding: 15px;
+      border-top: 1px solid #eee;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Site Header -->
+  <header>
+    <h1>Cat Gallery</h1>
+    <!-- Site Navigation -->
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Photo Gallery</a></li>
+        <li><a href="activities.html">Activity Ideas</a></li>
+        <li><a href="diy.html">Arts</a></li>
+        <li><a href="about.html">About Me</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content Section -->
+  <main>
+    <section class="gallery">
+      <!-- Cat Image Thumbnails -->
+      <img src="cat.png" alt="Orange Cat" />
+      <img src="cat2.png" alt="Orange Cat" />
+      <img src="cat3.png" alt="Orange Cat" />
+      <img src="cat4.png" alt="Orange Cat" />
+
+      <!-- Gallery Caption -->
+      <p>Each picture is of my cat!</p>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>2025 Kirat Makkar. All rights reserved.</p>
+  </footer>
+</body>
+</html>
